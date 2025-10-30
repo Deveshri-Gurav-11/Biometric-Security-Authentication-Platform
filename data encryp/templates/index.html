@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureIT | Home</title>
+  <style>
+    body {margin:0;font-family:Arial, sans-serif;background:#f9fafb;color:#333;}
+    header {background:#0f172a;color:#fff;padding:1rem;text-align:center;}
+    nav a {margin:0 15px;color:#fff;text-decoration:none;font-weight:bold;}
+    .hero {
+      text-align:center;
+      padding:4rem 2rem;
+      background:linear-gradient(to right,#0f172a,#2563eb);
+      color:#fff;
+    }
+    .hero h1 {font-size:2.8rem;margin-bottom:10px;}
+    .hero p {font-size:1.2rem;margin-bottom:20px;}
+    .btn {
+      background:#fff;color:#0f172a;
+      padding:12px 24px;
+      border-radius:6px;
+      text-decoration:none;font-weight:bold;
+    }
+    .graphics img {
+      width:180px;
+      margin:20px auto;
+      display:block;
+    }
+    .about {
+      max-width:900px;
+      margin:3rem auto;
+      text-align:center;
+      padding:2rem;
+    }
+    .about h2 {color:#0f172a;margin-bottom:1rem;}
+    .features {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+      margin-top:2rem;
+    }
+    .card {
+      background:#fff;
+      padding:1.5rem;
+      border-radius:10px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      width:250px;
+      text-align:center;
+    }
+    .card img {width:60px;margin-bottom:10px;}
+    footer {background:#111827;color:#fff;text-align:center;padding:1rem;margin-top:2rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <h2>SecureIT | Fingerprint Protection</h2>
+    <nav>
+      
+      <a href="{{ url_for('login') }}">Login</a>
+      <a href="{{ url_for('register') }}">Register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="graphics">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Fingerprint Security">
+    </div>
+    <h1>Secure Your Biometrics</h1>
+    <p>Keep your Biometric data safe and private from cyber threats.</p>
+    <a href= "{{ url_for('register') }}">Register</a>
+  </section>
+
+  <section class="about">
+    <h2>About SecureIT</h2>
+    <p>
+      SecureIT is a biometric protection platform designed to keep your digital fingerprints 
+      and identity safe from hackers. With advanced encryption, data monitoring, and 
+      security alerts, SecureIT ensures your biometric data is stored in a secure environment.
+    </p>
+
+    <div class="features">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Encryption">
+        <h3>Strong Encryption</h3>
+        <p>All fingerprints are encrypted with advanced algorithms for maximum safety.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User Control">
+        <h3>User Control</h3>
+        <p>Manage your biometric uploads anytime with your personal dashboard.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="Alerts">
+        <h3>Smart Alerts</h3>
+        <p>Get notified instantly if any suspicious activity is detected.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SecureIT. All rights reserved.</p>
+  </footer>
+</body>
+</html>
