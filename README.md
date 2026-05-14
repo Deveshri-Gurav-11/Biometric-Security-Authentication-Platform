@@ -49,7 +49,7 @@ Biometric-Security-Authentication-Platform/
 │
 ├── templates/                 # HTML templates
 │
-├── 1.py                       # Application utilities
+├── helpers.py                 # Application utilities
 ├── alert.py                   # Email alert handling
 ├── app_mongo.py               # Main Flask application
 ├── connect.py                 # Database connection setup
